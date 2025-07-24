@@ -18,9 +18,14 @@ body {
     object-fit: cover;
     
 }
+.logo{
+    width: 80vw;
+    height: 80vh;
+    object-fit: contain;
+}
 
 .fade-out-and-end-animation{
-    animation: fade-out 3s ease-out forwards;
+    animation: fade-out 4s ease-out forwards;
 }
 
 @keyframes fade-out {
@@ -34,6 +39,11 @@ body {
       width: 100vw;
       height: 80vh;
       object-fit: cover;
+    }
+    .logo{
+        width: 50vw;
+        height: 50vh;
+        object-fit: contain;
     }
   
     body, html {

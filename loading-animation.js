@@ -27,12 +27,14 @@ function nextImage() {
         delay = delay - 10;
     }
     if (counter === maxCycles) {
-        document.getElementById("slideshow").src = "pictures/logo.png";
+        document.getElementById("slideshow").classList.remove("frame");
+        document.getElementById("slideshow").classList.add("logo");
+        document.getElementById("slideshow").src = "pictures/logogrygrillz.png";
         
-            document.getElementsByClassName("frame")[0].classList.add("fade-out-and-end-animation");
+            document.getElementsByClassName("logo")[0].classList.add("fade-out-and-end-animation");
             setTimeout(() => {
                 document.getElementsByClassName("container")[0].style.display = "none";
-            }, 2000);
+            }, 4000);
     }
     
 }
