@@ -29,7 +29,7 @@ function nextImage() {
     if (counter === maxCycles) {
         document.getElementById("slideshow").classList.remove("frame");
         document.getElementById("slideshow").classList.add("logo");
-        document.getElementById("slideshow").src = "pictures/logogrygrillz.png";
+        document.getElementById("slideshow").src = "pictures/logoGryGrillz.png";
         
             document.getElementsByClassName("logo")[0].classList.add("fade-out-and-end-animation");
             setTimeout(() => {
